@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach doesnot return the value and also doesnot create new array
+        //map return the value as well as create new array
+        let fruits=["apple","guava","mango","orange","litchi"]
+       let new_arr= fruits.forEach((item,index,array)=>{
+// document.write(`<li> ${item} :${index}: ${array}</li>`)
+return item
+
+        })
+        document.write(new_arr+"<br>")
+
+let num=[0,1,2,3,8,5]
+       let n_a= num.map((value)=>{
+        if(value%2==0){
+            return value
+        }
+        else{
+            return "odd"
+        }
+            return value
+// document.write(`<li>${value}</li>`)
+        })
+        document.write(n_a)
+    </script>
+</body>
+</html>

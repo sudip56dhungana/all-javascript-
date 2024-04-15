@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            border: 1px solid;
+            position: relative;
+        }
+        .left{
+
+            position: absolute;
+            top: 50%;
+            left: 5px;
+
+        }
+        .right{
+            position: absolute;
+            top: 50%;
+            right: 5px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="" id="slider">
+        <button class="left" onclick="previous()">&lt;</button>
+        <button class="right" onclick="next()">&gt;</button>
+    </div>
+    <script src="imageslider.js"></script>
+</body>
+</html>

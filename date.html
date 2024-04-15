@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today=new Date()
+        document.write(today+"<br>")
+        let new_date=new Date(1978,11,23)
+        document.write(new_date+"<br>")
+        let year=today.getFullYear()
+        document.write(`year:${year}+"<br>`)
+        let month=today.getMonth()
+        document.write(`month:${month}`)
+        let all_month=["jan","feb","mar","april","may","jun","july","aug" ,"sep","oct","nov","dec"]
+        let today_month=all_month[month]
+        document.write(`month name: ${today_month}<br>`)
+        let date =today.getDate()
+        document.write(`date:${date} <br>`)
+        let day=today.getDay()
+        document.write(`day:${day} <br>`)
+        let today_day=["sun","mon","tue","wed","thu","fro","sat"]
+        let to_day=today_day[day]
+        document.write(`day:${to_day}<br>`)
+        let h=today.getHours()
+        let m=today.getMinutes()
+        let s=today.getSeconds()
+        document.write(`${h}:${m}:${s}`)
+    </script>
+</body>
+</html>

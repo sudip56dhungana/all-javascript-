@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("lets start async await")
+        
+
+        const result=async()=>{
+            console.log("inside the function")
+            await fetch('https://api.github.com/users')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+  console.log("after fetch")
+  console.log("finish fetching")
+
+        }
+        try{
+            console.log("before calling the function")
+        result();
+        console.log("after calling the result")
+        console.log("last line finish")
+        }
+    catch{
+console.log("error 404")
+    }
+    finally{
+        console.log("done with coding")
+    }
+
+     
+    </script>
+</body>
+</html>

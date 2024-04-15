@@ -1,0 +1,68 @@
+<!-- Asynchronous function is that type of function which execute in different time to handle time of synchronous function
+1) call back function 
+2) promise(resolve,rejects,),then,catch
+3) async await(try,catch)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=["apple","orange","banana","guava"]
+        const add=(item)=>{
+
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    let error=false
+                    if (!error){
+                        fruits.push(item)
+                        resolve()
+                    }
+                    else
+                    {
+                        reject("not added  sucessfully")
+                    }
+    fruits.push(item)
+    callback()
+},3000)
+            })
+
+
+setTimeout(()=>{
+    fruits.push(item)
+    callback()
+},3000)
+        }
+        const display=()=>{
+
+            setTimeout(()=>{
+                fruits.map(item=>{
+                document.write(`<li>${item}</li>`)
+            })
+          
+            },4000)
+
+            }
+        
+        add("mango")
+        .then(display)
+        .catch((err)=>{
+            document.write(err)
+        }) 
+
+        add("papaya")
+        .then(display)
+        .catch((err)=>{
+            document.write(err)
+        }) 
+
+        
+       
+    </script>
+</body>
+</html>

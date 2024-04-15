@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("enter 1 number"))
+        if (a>=0&&a<=1000){
+            let b=Number(prompt("enter 2 number"))
+        let c=prompt("+,-,/")
+        switch(c)
+        {
+            case "+":
+            document.write(a+b)
+            break;
+
+            case "-":
+            document.write(a-b)
+            break;
+
+            case "/":
+            document.write(a/b)
+            break;
+
+            case "*":
+            document.write(a+b)
+            break;
+            default:
+            document.write("invalid input")
+        }
+      
+
+        }
+        else{
+            document.write("it is a string please enter a number ")
+        }
+    </script>
+</body>
+</html>

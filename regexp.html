@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let text ="javascript is easy language of web,javascript"
+        // let pattern=/javascript/gi
+        // let res=text.match(pattern)
+        // document.write(res)
+
+        // [abc]=>find any character between the brackets
+        // [^abc]=>find any character not between the barckets
+        // [A-z]=>find the alphabet capital A to Z
+        // [a-z]=>find the alphabets from a to z
+        // [^A-Z]=>fnds others character except capital A to Z
+        // [0-9]
+        // [^0-9]
+        // [a-ZA-Z0-9]
+
+        let text ="cat rat bat hat 0at %at !at )at CAtty raBTTY"
+        // let pattern=/[cr]at/gi
+        let pattern=/[^0-9]at/gi
+        let res=text.match(pattern)
+        document.write(res)
+    </script>
+</body>
+</html>
